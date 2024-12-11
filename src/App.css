@@ -45,4 +45,67 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  user-select: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem 1rem;
+  background-color: #33333314;
+  color: rgba(58, 53, 53, 0.796);
+  box-shadow: 0.5px 0.5px 3.5px;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links a {
+  color: rgb(118, 90, 90);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar .cart {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .navbar .nav-links a {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 1rem;
+  }
+}
+.h1-brown {
+  color: rgb(118, 90, 90);
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
 }
