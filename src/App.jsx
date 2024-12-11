@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListCont text="Bienvenido a mi Proyecto JSX!" color="brown" />
+      <ItemListCont text="Bienvenido a mi Proyecto JSX!!!" color="brown" />
     </>
   );
 }
