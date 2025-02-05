@@ -10,11 +10,11 @@ function itemCount() {
   };
   return (
     <div>
-      <button class="btnMas" onClick={handleAdd}>
+      <button className="btnMas" onClick={handleAdd}>
         +
       </button>
       <span>{count}</span>
-      <button class="btnMenos" onClick={handleSubstract}>
+      <button className="btnMenos" onClick={handleSubstract}>
         -
       </button>
     </div>

@@ -1,3 +1,7 @@
+.sectionCards {
+  margin: 18vh;
+}
+
 .card {
   padding: 10px 15px 5px;
   border: 1px solid #ddd;

@@ -4,7 +4,8 @@ function FlexContainer(props) {
     flexWrap: "wrap",
     justifyContent: "center",
     flexDirection: "row",
-    gap: "20px",
+    gap: "40px",
+    margin: "15vh",
   };
 
   return <div style={styleFlex}>{props.children}</div>;
