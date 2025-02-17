@@ -40,6 +40,7 @@
 .read-the-docs {
   color: #888;
 }  */
+
 * {
   list-style-type: none;
   margin: 0;
@@ -73,7 +74,7 @@
 }
 
 .navbar .nav-links a {
-  color: rgb(118, 90, 90);
+  color: rgb(129, 86, 86);
   text-decoration: none;
   font-size: 1rem;
 }
@@ -103,8 +104,8 @@
     padding: 0.5rem 1rem;
   }
 }
-.h1-brown {
-  color: rgb(118, 90, 90);
+.greeting {
+  color: rgb(129, 86, 86);
   display: flex;
   justify-content: center;
   margin-top: 15vh;

@@ -6,16 +6,16 @@ function itemCount() {
     let cont = setCount(count + 1);
   };
   const handleSubstract = () => {
-    setCount(count - 1);
+    count > 1 && setCount(count - 1);
   };
   return (
     <div>
-      <button className="btnMas" onClick={handleAdd}>
-        +
+      <button className="btnMas" onClick={handleSubstract}>
+        -
       </button>
       <span>{count}</span>
-      <button className="btnMenos" onClick={handleSubstract}>
-        -
+      <button className="btnMenos" onClick={handleAdd}>
+        +
       </button>
     </div>
   );

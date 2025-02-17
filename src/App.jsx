@@ -1,18 +1,21 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
-import products from "../data";
-import CardProduct from "./components/CardProduct";
-import FlexContainer from "./components/FlexContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer";
+import ItemListCont from "./components/ItemListCont";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const list = products.map((prod) => (
-    <CardProduct key={prod.id} name={prod.name} price={prod.price} />
-  ));
   return (
-    <>
+    <BrowserRouter>
       <NavBar />
-      <FlexContainer>{list}</FlexContainer>
-    </>
+      <Routes>
+        <Route
+          path="/"
+          element={<ItemListCont greeting="Bienvenido a mi E-commerce" />}
+        />
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

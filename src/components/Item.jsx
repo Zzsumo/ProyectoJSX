@@ -1,9 +1,10 @@
 import ItemCount from "./ItemCount";
 import Button from "./Button";
 import "./card.css";
+import { Link } from "react-router-dom";
 
-function CardProduct(props) {
-  const { image, name, description, price } = props;
+function Item(props) {
+  const { image, name, description, price, id } = props;
   return (
     <div className="card">
       <img src={image} alt="" width="150" height="150" />
@@ -13,10 +14,13 @@ function CardProduct(props) {
         <div>
           <p className="card-price">{price}</p>
         </div>
-        <Button>Agregar al carrito</Button>
-        <ItemCount />
+        <Link to={`/item/${id}`}>
+          <Button>Detalle</Button>
+        </Link>
       </div>
     </div>
   );
 }
-export default CardProduct;
+export default Item;
+
+//CardProduct
